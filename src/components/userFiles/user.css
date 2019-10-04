@@ -1,0 +1,75 @@
+.user-container{
+  padding: 15px;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.card {
+  box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  height: auto;
+  text-align: center;
+  font-family: ubuntu, sans-serif;
+  border-radius: 10px;
+}
+#img-user{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 0px;
+
+}
+.inputfile + label{
+  margin: 10px;
+}
+#title-user{
+  margin: 15px;
+}
+
+.deporte, .level-Player, .carrera, .phone-number{
+  color: black;
+  font-size: 18px;
+  margin: 2px;
+}
+
+.contact-btn {
+  border: none;
+
+  display: inline-block;
+  padding: 2px;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+  width: 70%;
+  border-radius: 20px;
+  font-size: 18px;
+}
+.contact-btn {
+  background: linear-gradient(#FFDA63, #FFB940);
+  opacity: 0.8;
+
+}
+.contact-btn:hover {
+		opacity: 1;
+}
+
+
+#icon-contact{
+  padding: 10px;
+  font-size: 22px;
+  color: black;
+}
+#icon-contact:hover{
+  color: red;
+}
+
+.contact-btn:hover, #icon-contact:hover {
+  opacity: 0.7;
+}
+
+.info-juegos{
+  padding: 15px;
+}

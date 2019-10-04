@@ -1,0 +1,109 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  font-family: sans-serif;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(208,89,109,1) 0%, rgba(231,156,118,1) 90% );
+}
+
+.tittle{
+  color: #fff;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+form{
+  border-radius: 6px;
+  margin: auto;
+  width: 50%;
+  max-width: 500px;
+  background: #f3f3f3;
+  padding: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.container-register{
+  display: flex;
+  min-height: 100vh;          /*posiciona en el centro el container-register de forma vertical*/
+  width: 80%;                /*TESTING: .em .em em;    */
+  margin: 0 auto;
+}
+.tittle{
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgba(200, 0, 0, 0.5);
+    font-size: 25px;                /*titulo: font-size 25*/
+}
+
+.register-form{
+  width: 100%;
+  max-width: 450px;
+  margin: auto;
+  border-width: 0px  ;
+}
+.input-container-register{
+  padding: 0px 1%;              /*26/09/2019    adaptado ancho de input para visualizacion responsive Phone*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+input{
+  margin-bottom: 15px;
+  padding: 4%;
+  font-size: 12px;                /*Text: Font-size 12px*/
+}
+.input-48{
+  width: 48%;
+  border-radius: 10px;
+  border: 0;
+}
+.input-100{
+  width: 100%;
+  border-radius: 10px;
+  border: 0;
+}
+
+#genre-tittle{
+  font-size: 15px;
+  text-decoration: underline black;
+}
+.genre{
+  max-width: 100vh;
+  max-height: 100vh;            /*establecido limite entre espacios*/
+  padding: 10px;
+  color: black;
+  margin: 0 auto;
+  font-size: 12px;              /*Tamaño de Texto responsive*/
+  text-align: center;
+}
+
+
+
+#Masculino,#Femenino{
+  cursor: pointer;
+}
+.btn-register{
+  background: linear-gradient(#FFDA63, #FFB940);
+  width: 100%;
+  font-size: 18px;
+  padding: 10px;
+  border: 0;
+  border-radius: 20px;
+  margin: 0px;
+  opacity: 0.8;
+                /*modified: en modo horizontal btn-register chocaba con .genre*/
+  cursor: pointer;
+}
+.btn-register:hover{
+  opacity: 1;
+}
+.sing-in{
+  width: 100%;
+  margin: 0;
+  font-size: 10px;
+  text-align: center;
+  padding: 10px;
+}
+/* googlebtn */
+.g-signin2{
+  margin: 0 auto;
+}

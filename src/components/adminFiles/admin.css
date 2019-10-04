@@ -1,0 +1,123 @@
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+    max-width: 80%;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+}
+.inputfile + label figure {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #d3394c;
+    display: block;
+    padding: 10px;
+    margin: 0 auto 2px;
+}
+.inputfile + label svg {
+    width: 100%;
+    height: 100%;
+    fill: #f1e5e6;
+}
+.inputfile + label{
+  color: #d3394c;
+}
+
+/* Profile container */
+.profile-row {
+  margin: 20px 0;
+}
+
+/* Profile sidebar */
+.profile-sidebar {
+  padding: 20px 0 10px 0;
+  background: #fff;
+  border-radius: 10px;
+
+}
+
+.profile-userpic img {
+  float: none;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  border-radius: 50% !important;
+}
+
+.profile-usertitle {
+  text-align: center;
+  margin: 20px;
+}
+
+.profile-usertitle-name {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 5px;
+}
+
+.profile-usertitle-job {
+  text-transform: uppercase;
+  color: #5b9bd1;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.profile-userbuttons {
+  text-align: center;
+  margin:0 auto;
+}
+
+.profile-userbuttons .btn {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+/* -------------------------------------------testing------ */
+
+.profile-usermenu, .btn-md {
+    padding: 10px 35px;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    border-radius: 25px;
+}
+.btn-info-gradiant {
+  background: linear-gradient(#FFDA63, #FFB940);
+  opacity: 0.8;
+
+  cursor: pointer;
+}
+.btn-info-gradiant:hover {
+		opacity: 1;
+}
+.glyphicon{
+  padding-right: 8px;
+}
+@media only screen  and (min-width : 768px)  and (max-width : 1024px)  and (-webkit-min-device-pixel-ratio: 1)  {
+.profile-usermenu, .btn-md{
+    padding: 10px 15px;
+  }
+}
+
+/* Profile Content */
+.profile-content {
+  text-align: center;
+  background: #fff;
+  min-height: 460px;
+}
