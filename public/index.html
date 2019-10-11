@@ -7,10 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="Web site created using create-react-app" />
+
+<!-- posible problema this.-->
   <link rel="apple-touch-icon" href="logo192.png" />
   <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
+<!-- + this -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+<!-- Consola: Error while trying to use the following icon from the Manifest: http://localhost:3000/logo192.png (Download error or resource isn't a valid image) -->
 
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
@@ -18,7 +22,6 @@
   <!-- fontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- googleapis -->
-  <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
 
   <title>React App</title>
 </head>
@@ -30,27 +33,7 @@
   <!--
 Buscar Forma de ingresar con cuenta Google   (Backend)
  -->
-  <script>
-    function onSuccess(googleUser) {
-      console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
-    }
 
-    function onFailure(error) {
-      console.log(error);
-    }
-
-    function renderButton() {
-      gapi.signin2.render('my-signin2', {
-        'scope': 'profile email',
-        'longtitle': true,
-        'theme': 'dark',
-        'onsuccess': onSuccess,
-        'onfailure': onFailure
-      });
-    }
-  </script>
-
-  <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
 
 </body>
 

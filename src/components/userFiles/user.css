@@ -1,3 +1,22 @@
+.edit-userContainer{
+  z-index: 289;
+}
+
+.btn-edit{
+  background: linear-gradient(#FFDA63, #FFB940);
+  width: 100%;
+  font-size: 18px;
+  padding: 10px;
+  border: 0;
+  border-radius: 20px;
+  margin: 0px;
+  opacity: 0.8;
+                /*modified: en modo horizontal btn-register chocaba con .genre*/
+  cursor: pointer;
+}
+.btn-edit:hover{
+  opacity: 1;
+}
 .user-container{
   padding: 15px;
 }
@@ -10,7 +29,7 @@
 }
 .card {
   box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
+  max-width: 400px;
   height: auto;
   text-align: center;
   font-family: ubuntu, sans-serif;
@@ -29,7 +48,7 @@
   margin: 15px;
 }
 
-.deporte, .level-Player, .carrera, .phone-number{
+.deporte, .carrera, .phone_number{
   color: black;
   font-size: 18px;
   margin: 2px;
@@ -37,7 +56,6 @@
 
 .contact-btn {
   border: none;
-
   display: inline-block;
   padding: 2px;
   color: black;
@@ -47,13 +65,21 @@
   border-radius: 20px;
   font-size: 18px;
 }
+.back-user{
+  padding: 15px;
+  margin:0 auto;
+}
+
 .contact-btn {
   background: linear-gradient(#FFDA63, #FFB940);
+  text-decoration: none;
   opacity: 0.8;
 
 }
 .contact-btn:hover {
+    text-decoration: none;
 		opacity: 1;
+    color: black;
 }
 
 
@@ -66,7 +92,7 @@
   color: red;
 }
 
-.contact-btn:hover, #icon-contact:hover {
+#icon-contact:hover {
   opacity: 0.7;
 }
 

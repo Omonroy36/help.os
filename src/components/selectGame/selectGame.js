@@ -11,9 +11,9 @@ class SelectGame extends React.Component{
         <h1 className="tittle-game">Select Game</h1>
         </div>
           <div className="col-sm-6 text-center">
-          <figure class="game">
+          <figure className="game">
           <img id='Football' alt="Football" style={shortcut} src={require('../../img/football.png')}/>
-            <div class="title">
+            <div className="title">
               <div>
                 <h2>Football</h2>
                 <h4>Tool</h4>
@@ -26,9 +26,9 @@ class SelectGame extends React.Component{
           </figure>
           </div>
           <div className="col-sm-6 text-center">
-          <figure class="game">
+          <figure className="game">
           <img id='Tennis' alt="Tennis" className="tennis-w"style={shortcut} src={require('../../img/tennisball.png')}/>
-            <div class="title">
+            <div className="title">
               <div>
                 <h2>Tennis</h2>
                 <h4>Tool</h4>
@@ -41,9 +41,9 @@ class SelectGame extends React.Component{
           </figure>
           </div>
           <div className="col-sm-6 text-center">
-          <figure class="game">
+          <figure className="game">
           <img id='Basketball' alt="Basketball" style={shortcut} src={require('../../img/basketball.png')}/>
-            <div class="title">
+            <div className="title">
               <div>
                 <h2>Basketball</h2>
                 <h4>Tool</h4>
@@ -57,9 +57,9 @@ class SelectGame extends React.Component{
           </div>
 
           <div className="col-sm-6 text-center">
-          <figure class="game">
+          <figure className="game">
           <img id='Baseball' alt="Baseball" style={shortcut} src={require('../../img/baseball.png')}/>
-            <div class="title">
+            <div className="title">
               <div>
                 <h2>Baseball</h2>
                 <h4>Tool</h4>

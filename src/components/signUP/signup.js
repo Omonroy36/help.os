@@ -1,25 +1,26 @@
 import React from 'react';
 import './register.css';
 
+
 class Registro extends React.Component{
   constructor(props){
     super(props)
     this.state = {
-      username:'',
-      password:'',
-      firstname:'',
-      lastname:'',
-      e_mail:'',
-      gender:''
+
+      id: this.props.user.id,
+      username: this.props.user.username,
+      password: this.props.user.password,
+      firstname: this.props.user.firstname,
+      lastname:  this.props.user.lastname,
+      e_mail: this.props.user.e_mail,
+      gender: this.props.user.gender
 
     }
 
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
   }
-  handleChange = (event) => {
-    this.setState({ [event.target.name]: event.target.value });
-  }
+
 
   onChange(e){
     this.setState({ [e.target.name]: e.target.value });
@@ -64,28 +65,16 @@ class Registro extends React.Component{
 
 
           <button className="btn-register" type="submit" value="submit">Registrar</button>
-          <p className="sing-in">Ya tienes cuenta? <br/><a href="/signin.com" target="_blank">Ingresa aquí</a></p>
-          <div className="g-signin2" data-longtitle="true"/>
+          <p className="sing-in">Ya tienes cuenta? <br/><a href="/" >Ingresa aquí</a></p>
           </div>
           </form>
       </div>
-      //DEBUG: En google api button uncaught TypeError: Cannot read property 'style' of null
-      // msg: de consola html
-      // TERMINAR: Vista de imagen para Sabado
+
     )
   }
 }
 export default Registro;
+//  REMOVED: linea 67 target="_blank"
+
 
 // actulizacion 27/09/2019 1:06: AGREGADO; funcion para almacenar datos en consola.
-
-
-// otra opcion para reemplazar imput tipo radio a un Select
-// <label>
-//   Sexo:
-//   <select name='gender' >
-//     <option value="Masculino">Masculino</option>
-//     <option value="Femenino">Femenino</option>
-//     <option value="Otro">Otro</option>
-//   </select>
-// </label>
